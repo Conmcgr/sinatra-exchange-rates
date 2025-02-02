@@ -1,0 +1,9 @@
+<h1>Convert <%= @current %></h1>
+
+<ul>
+  <% @currencies.each do |cur| %>
+    <li>
+      <p><a href="/conversion?from=<%= @current %>&to=<%= cur %>">Convert 1 <%= @current %> to <%= cur %></a></p>
+    </li>
+  <% end %>
+</ul>
