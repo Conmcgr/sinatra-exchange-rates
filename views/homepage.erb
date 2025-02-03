@@ -3,7 +3,7 @@
 <ul>
   <% @currencies.each do |cur| %>
     <li>
-      <p><a href="/convert?current=<%= cur %>">Convert 1 <%= cur %> to ...</a></p>
+      <p><a href="/<%= cur %>">Convert 1 <%= cur %> to ...</a></p>
     </li>
   <% end %>
 </ul>
